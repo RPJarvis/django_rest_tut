@@ -26,3 +26,6 @@ class SnippetSerializer(serializers.ModelSerializer):
     #
     #     #create new instance
     #     return Snippet(**attrs)
+
+        #request.POST  # Only handles form data.  Only works for 'POST' method.
+        #request.DATA  # Handles arbitrary data.  Works for 'POST', 'PUT' and 'PATCH' methods.
