@@ -26,6 +26,9 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
+REST_FRAMEWORK = {
+    'PAGINATE_BY': 10
+}
 
 # Application definition
 

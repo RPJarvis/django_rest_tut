@@ -12,7 +12,7 @@ LANGUAGE_CHOICES = sorted([(item[1][0], item[0]) for item in LEXERS])
 STYLE_CHOICES = sorted((item, item) for item in get_all_styles())
 
 class Snippet(models.Model):
-    owners = models.ForeignKey('auth.User', related_name='snippets', default='')
+    owner = models.ForeignKey('auth.User', related_name='snippets', default='')
     highlighted = models.TextField(default='')
     created = models.DateTimeField(auto_now_add=True)
     title = models.CharField(max_length=100, blank=True, default='')
